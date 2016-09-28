@@ -26,11 +26,11 @@ get_header(); ?>
 						<h2>Latest Opinion</h2>
 						
 						<?php // opinion posts loop begins here
-						$opinionPosts = new WP_Query('cat=3&posts_per_page=2');
+						$ourPosts = new WP_Query('cat=3&posts_per_page=2');
 
-						if ($opinionPosts->have_posts()) :
+						if ($ourPosts->have_posts()) :
 
-							while ($opinionPosts->have_posts()) : $opinionPosts->the_post(); ?>
+							while ($ourPosts->have_posts()) : $ourPosts->the_post(); ?>
 								<!-- post-item -->
 								<div class="post-item clearfix">
 
@@ -68,11 +68,11 @@ get_header(); ?>
 						<h2>Latest News</h2>
 						
 						<?php // news posts loop begins here
-						$newsPosts = new WP_Query('cat=4&posts_per_page=2');
+						$ourPosts = new WP_Query('cat=4&posts_per_page=2');
 
-						if ($newsPosts->have_posts()) :
+						if ($ourPosts->have_posts()) :
 
-							while ($newsPosts->have_posts()) : $newsPosts->the_post(); ?>
+							while ($ourPosts->have_posts()) : $ourPosts->the_post(); ?>
 								<!-- post-item -->
 								<div class="post-item clearfix">
 
